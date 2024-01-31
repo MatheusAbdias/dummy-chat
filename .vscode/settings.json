@@ -1,0 +1,24 @@
+{
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": "\\.go$",
+        "cmd": "golines ${file} -w"
+      },
+      {
+        "match": "\\.go$",
+        "cmd": "goimports-reviser -set-alias -format ${file}"
+      }
+    ]
+  },
+  "go.lintTool": "golangci-lint",
+  "go.lintFlags": ["--fast"],
+  "go.lintOnSave": "package",
+  "go.testFlags": ["-failfast", "-v"],
+  "go.toolsManagement.autoUpdate": true,
+  "go.useLanguageServer": true,
+  "files.associations": {
+    "*.tmpl": "html",
+    "*.jet": "html"
+  }
+}

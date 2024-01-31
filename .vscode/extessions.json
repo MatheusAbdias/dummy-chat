@@ -1,0 +1,7 @@
+{
+  "recommendation": [
+    "emeraldwalk.RunOnSave",
+    "mikestead.dotenv",
+    "golang.go"
+  ]
+}
